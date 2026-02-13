@@ -1,0 +1,79 @@
+
+
+@import url(page-banner.css);
+
+/* tracking  */
+.tracking-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.tracking-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.tracking-container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.tracking-form {
+  display: flex;
+  gap: 15px;
+  align-items: stretch;
+}
+
+.tracking-form textarea {
+  flex: 1;
+  height: 80px;
+  resize: none;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  outline: none;
+}
+
+.tracking-form textarea:focus {
+  border-color: #0b3aa4;
+}
+
+.tracking-form button {
+  width: 140px;
+  background: #0b3aa4;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tracking-form button:hover {
+  background: #082e82;
+}
+
+#trackingResult {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .tracking-form {
+    flex-direction: column;
+  }
+
+  .tracking-form button {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+/* TRACK HISTORY */

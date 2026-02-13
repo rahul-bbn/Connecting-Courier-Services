@@ -1,0 +1,28 @@
+:root{
+  --blue:#0b3aa4;
+  --red:#e92147;
+  --dark:#111;
+  --white:#fff;
+}
+
+
+/* <div class="work-step left">
+                    <div class="icon-wrapper">
+
+                        <!-- DOTTED OUTER -->
+                        <div class="icon-circle">
+                            <div class="inner-circle">
+                                <img src="images/icons/received.png" alt="">
+                            </div>
+                        </div>
+
+                        <!-- DOWN LINE -->
+                        <span class="step-line"></span>
+
+                        <!-- STEP TEXT -->
+                        <span class="step-label">STEP 01</span>
+
+                    </div>
+
+                    <div class="step-text">Received your product</div>
+                </div> */

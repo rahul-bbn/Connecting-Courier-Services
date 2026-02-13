@@ -1,0 +1,57 @@
+.page-banner {
+  position: relative;
+  height: 320px;
+  background: url("../images/page-banner-bg-5.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.page-banner-content {
+  position: relative;
+  z-index: 2;
+  width: 95%;
+  margin: auto;
+  color: #fff;
+}
+
+.page-banner-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 30px;
+}
+
+.breadcrumb {
+  font-size: 15px;
+  color: #ddd;
+  font-weight: 700;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-banner {
+    height: 240px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 34px;
+  }
+}

@@ -1,0 +1,33 @@
+/* @media(max-width:992px){
+  .feature-grid,.about-boxes,.services-grid{flex-direction:column;grid-template-columns:1fr}
+} */
+
+@media (max-width: 992px) {
+  .cta-logistics-inner {
+    flex-direction: column;
+  }
+
+  .cta-image,
+  .cta-content {
+    width: 100%;
+  }
+
+  .cta-icon-circle {
+    left: 50%;
+    top: 35%;
+  }
+
+  .cta-content {
+    padding: 50px 30px;
+    text-align: center;
+  }
+}
+
+/* FOOTER */
+@media (max-width: 768px) {
+  .footer-social-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
