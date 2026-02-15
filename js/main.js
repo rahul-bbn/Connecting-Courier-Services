@@ -1,3 +1,4 @@
+
 // /* ================= COMMON HTML LOADER ================= */
 // function loadHTML(id, file, callback) {
 //   fetch(file)
@@ -196,36 +197,21 @@
 //   initHowWorkLines();
 // });
 
+
+
 /* ================= COMMON HTML LOADER ================= */
 function loadHTML(id, file, callback) {
   fetch(file)
     .then(res => res.text())
     .then(data => {
-      document.getElementById(id).innerHTML = data;
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.innerHTML = data;
       if (callback) callback();
-    })
-    .catch(err => console.error("Load error:", err));
+    });
 }
-
-// function loadHTML(id, file, callback) {
-//   fetch(file)
-//     .then(response => {
-//       if (!response.ok) {
-//         throw new Error("Failed to load " + file);
-//       }
-//       return response.text();
-//     })
-//     .then(data => {
-//       document.getElementById(id).innerHTML = data;
-//       if (callback) callback();
-//     })
-//     .catch(error => {
-//       console.error(error);
-//     });
-// }
-
 /* ================= HEADER SCROLL ================= */
-let header = null;
+let header;
 
 function handleHeaderScroll() {
   if (!header) return;
@@ -238,14 +224,14 @@ function handleHeaderScroll() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  header = document.getElementById("mainHeader");
-
-  if (header) {
-    header.classList.add("loaded"); // 👈 prevent flicker
-    handleHeaderScroll();           // 👈 refresh safe
-  }
-
-  window.addEventListener("scroll", handleHeaderScroll);
+  loadHTML("header", "partials/header.html", () => {
+    header = document.getElementById("mainHeader");
+    if (header) {
+      header.classList.add("loaded");
+      handleHeaderScroll();
+      window.addEventListener("scroll", handleHeaderScroll);
+    }
+  });
 });
 
 
@@ -262,6 +248,7 @@ function animateHeroText() {
   });
 }
 
+
 /* ================= HERO SLIDER ================= */
 function initHeroSlider() {
   const slides = document.querySelectorAll(".slide");
@@ -274,6 +261,10 @@ function initHeroSlider() {
   function showSlide(index) {
     slides.forEach(s => s.classList.remove("active"));
     dots.forEach(d => d.classList.remove("active"));
+
+    document.querySelectorAll('.animate').forEach(el => {
+  el.classList.add('show');
+});
 
     slides[index].classList.add("active");
     dots[index].classList.add("active");
@@ -372,5 +363,14 @@ loadHTML("header", "partials/header.html", () => {
   initScrollAnimation();
   initHowWorkLines();
 });
+
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("open");
+  document.querySelector(".menu-btn").classList.toggle("active");
+}
+
+function toggleSubmenu(el) {
+  el.parentElement.classList.toggle("open");
+}
 
 

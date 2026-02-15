@@ -2,8 +2,14 @@
 @import url("base.css");
 @import url("about-block.css");
 @import url("page-banner.css");
-@import url("responsive.css");
 
+
+.hero,
+.slides,
+.hero-overlay {
+  width: 100%;
+  max-width: 100%;
+}
 
 
 /* TOP BAR */
@@ -15,6 +21,10 @@
   justify-content: space-between;
   font-size: 14px;
 }
+#top {
+  flex: 0 0 55%;   /* sirf 55% space */
+  /* white-space: nowrap; */
+}
 #top i{
   font-weight: bold;
   padding-left: 10px;
@@ -24,10 +34,12 @@
   text-decoration: none;
   transition: 0.3s;
   padding: 10px;
+  
 }
 .top-bar a:hover {
   color: #e92147;
 }
+
 
 /* HEADER */
 .header {
@@ -41,7 +53,7 @@
   background: transparent;
   transition: all 0.4s ease;
   z-index: 999;
-
+/* position: relative; */
   opacity: 0;             /*  👈 IMPORTANT */
   visibility: hidden;
 }
@@ -137,6 +149,177 @@
 .nav-menu a.active {
   color: var(--red);
 }
+
+/* HAMBURGER */
+/* HAMBURGER BUTTON */
+.menu-btn {
+  display: none;
+  width: 42px;
+  height: 42px;
+  background: #0b3dbd;
+  border: none;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* HAMBURGER LINES */
+.menu-btn span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+#navMenu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;              /* 🔥 image jaisa */
+  max-width: 90%;
+  height: 100vh;
+  background: linear-gradient(180deg, #111, #000);
+  padding-top: 90px;
+  list-style: none;
+  transition: right 0.45s ease;
+  z-index: 2000;
+  box-shadow: -6px 0 20px rgba(0,0,0,0.6);
+}
+
+/* MOBILE MENU */
+#navMenu {
+  position: fixed;
+  overflow-y: auto;
+  top: 0px;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: #111;
+  padding-top: 90px;
+  list-style: none;
+  transition: right 0.4s ease;
+  z-index: 2000;
+}
+
+#navMenu .logo-area {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#navMenu .logo-area img {
+  width: 40px;
+}
+
+#navMenu .logo-area span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+#navMenu li {
+  padding: 16px 25px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+#navMenu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+
+/* OPEN STATE */
+#navMenu.open {
+  right: 0;
+}
+
+/* CLOSE ICON
+   ========================= */
+#navMenu .close-item {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  padding: 0;
+}
+
+#navMenu .close-btn {
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  background: rgba(255,255,255,0.08);
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* MOBILE DROPDOWN */
+.mobile-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.mobile-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #0c0c0c;
+}
+
+.mobile-submenu li {
+  padding: 12px 30px;
+}
+
+.mobile-submenu a {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* OPEN STATE */
+.mobile-dropdown.open .mobile-submenu {
+  max-height: 400px;
+}
+
+.mobile-dropdown.open .arrow {
+  transform: rotate(90deg);
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
 
 /* HERO */
 .hero {
@@ -404,17 +587,7 @@
   padding-left: 28px;   /* 👈 smooth slide */
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .feature-grid {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .track-input {
-    max-width: 100%;
-  }
-}
 
 /* ABOUT SECTION */
 
@@ -510,11 +683,7 @@
   transform: translateY(-5px);
 }
 
-@media (max-width: 992px) {
-  .about-boxes {
-    flex-direction: column;
-  }
-}
+
 
 .highlight-bg {
   background: var(--blue);
@@ -686,12 +855,7 @@
   transform: translateY(-8px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 /* SERVICE HOVER OVERLAY */
 .service-hover {
@@ -970,7 +1134,7 @@
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .how-work-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2,2fr);
     gap: 50px;
   }
 
@@ -1235,3 +1399,4 @@
   font-size: 14px;
   color: #cfcfcf;
 }
+

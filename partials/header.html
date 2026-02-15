@@ -2,7 +2,7 @@
 <header id="mainHeader" class="header">
   <div class="logo-area">
     <img src="images/logo.png" alt="Logo">
-    <span>Connecting Courier Services</span>
+    <span>CONNECTING COURIER SERVICES</span>
   </div>
 
   <nav class="nav-menu">
@@ -40,4 +40,54 @@
 
   <!-- HEADER SEPARATOR -->
   <div class="header-line"></div>
+
+  <!-- HAMBURGER -->
+  <!-- <button class="menu-btn" onclick="toggleMenu()">☰</button> -->
+  <button class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- MOBILE MENU -->
+  <ul id="navMenu">
+    <!-- CLOSE ICON -->
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Logo">
+      <span>Connecting Courier Services</span>
+    </div>
+    <li class="close-item">
+      <span class="close-btn" onclick="toggleMenu()">✖</span>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="mobile-dropdown">
+      <div class="mobile-link" onclick="toggleSubmenu(this)">
+        Services <span class="arrow">›</span>
+      </div>
+
+      <ul class="mobile-submenu">
+        <li><a href="../e-commerce-delivery-solution.html">E Commerce Delivery Solution</a></li>
+        <li><a href="../overseas-warehousing-return-management.html">Overseas Warehousing & Return Management</a></li>
+        <li><a href="../air-sea-freight.html">Air Freight</a></li>
+        <li><a href="../express-delivery.html">Express Delivery</a></li>
+        <li><a href="../e-commerce-export-advisory-services.html">E Commerce Export Advisory Services</a></li>
+        <li><a href="../personal-baggage.html">Personal Baggage</a></li>
+      </ul>
+    </li>
+    <li class="mobile-dropdown">
+      <div class="mobile-link" onclick="toggleSubmenu(this)">
+        Features <span class="arrow">›</span>
+      </div>
+
+      <ul class="mobile-submenu">
+        <li><a href="../kyc.html">Kow Your Customer (KYC)</a></li>
+        <li><a href="../metric-coversion.html">Metric Conversion</a></li>
+        <li><a href="../currency-calculator.html">Currency Calculator</a></li>
+      </ul>
+    </li>
+    <li><a href="tracking.html">Tracking</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    
+  </ul>
 </header>
