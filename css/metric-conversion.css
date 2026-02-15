@@ -1,0 +1,59 @@
+@import url(style.css);
+@import url(base.css);
+@import url(color.css);
+
+  .calculator-box{
+    width:350px;
+  }
+
+  .form-group{
+    margin-bottom:18px;
+  }
+
+  label{
+    display:block;
+    font-size:16px;
+    margin-bottom:6px;
+    color: #383737;
+  }
+
+  input, select{
+    width:100%;
+    padding:10px 12px;
+    border:1px solid #cbd5e1;
+    border-radius:4px;
+    font-size:15px;
+    outline:none;
+    color: #383737;
+  }
+
+  input:focus, select:focus{
+    border-color:#e11d48;
+  }
+
+  .btn{
+    background:#e11d48;
+    color:#fff;
+    border:none;
+    padding:12px 30px;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:2px;
+    margin-top:10px;
+  }
+
+  .btn:hover{
+    background:#be123c;
+  }
+
+  .result{
+    margin-top:25px;
+    font-size:16px;
+    font-weight:600;
+    color: #333232;
+  }
+
+  .result span{
+    font-weight:700;
+    color: #333232;
+  }

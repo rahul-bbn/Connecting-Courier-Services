@@ -1,4 +1,6 @@
 @import url(page-banner.css);
+@import url(base.css);
+@import url(color.css);
 
 .contact-section {
   padding: 80px 0;

@@ -1,0 +1,105 @@
+@import url(style.css);
+@import url(base.css);
+@import url(color.css);
+
+body{
+  background:#fff;
+}
+
+/* SIDEBAR */
+.feature-sidebar{
+  /* width:320px; */
+  background:#f8f7f7;
+  padding:30px;
+  border:1px solid #eee;
+}
+
+/* TOP RED LINE */
+.feature-header{
+  height:4px;
+  background:#e11d48;
+  margin:-30px -30px 25px;
+}
+
+/* TITLE */
+.feature-title{
+  font-size:34px;
+  font-weight:700;
+  margin-bottom:10px;
+  color: #353333;
+}
+
+/* SMALL RED LINE */
+.feature-underline{
+  display:block;
+  width:60%;
+  height:3px;
+  background:#e11d48;
+  margin-bottom:30px;
+}
+
+/* MENU */
+.feature-menu{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.feature-menu li{
+  position:relative;
+}
+
+/* LINK */
+.feature-menu li a{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:18px 0;
+  font-size:22px;
+  font-weight:700;
+  color:#353333;
+  text-decoration:none;
+  border-bottom:1px solid #cfcfcf;
+  position:relative;
+  transition:color 0.3s ease;
+}
+
+/* ARROW */
+.feature-menu .arrow{
+  font-size:50px;
+  color:#e11d48;
+  font-weight:bold;
+  padding-bottom: 10px;
+}
+
+/* UNDERLINE (ANIMATION) */
+.feature-menu li a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-1px;
+  width:100%;
+  height:2px;
+  background:#e11d48;
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform 0.35s ease-in-out;
+}
+
+/* HOVER EFFECT */
+.feature-menu li a:hover{
+  color:#e11d48;
+}
+
+.feature-menu li a:hover::after{
+  transform:scaleX(1);
+}
+
+/* ACTIVE ITEM
+.feature-menu li.active a{
+  color:#e11d48;
+} */
+
+.feature-menu li.active a::after{
+  transform:scaleX(1);
+}

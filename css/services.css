@@ -1,0 +1,140 @@
+@import url(style.css);
+@import url(e-commerce-export.css);
+@import url(metric-conversion.css);
+@import url(base.css);
+@import url(color.css);
+
+.service-detail {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 60px;
+}
+
+/* LEFT */
+.service-image img {
+  width: 100%;
+  height: 380px;
+  display: block;
+}
+
+.help-box {
+  background: var(--red);
+  color: #fff;
+  padding: 40px;
+  margin-top: -6px;
+}
+
+.help-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.help-box h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* RIGHT */
+.service-right h2 {
+  color: #353333;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.service-right p {
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* FEATURES */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.service-right {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===============================
+   SAFE MOBILE RESPONSIVE PATCH
+   (NO EXISTING CODE TOUCHED)
+================================ */
+
+/* Tablet refinement */
+@media (max-width: 992px) {
+  .page-banner {
+    height: 320px;
+  }
+
+  .page-banner-content h1 {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .breadcrumb {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* Mobile improvement */
+@media (max-width: 576px) {
+  .page-banner {
+    height: 200px;
+    align-items: center;
+  }
+
+  .page-banner-content {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .page-banner-content h1 {
+    font-size: 26px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

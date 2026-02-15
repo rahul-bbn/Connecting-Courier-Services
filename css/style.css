@@ -1,5 +1,7 @@
 @import url("color.css");
 @import url("base.css");
+@import url("about-block.css");
+@import url("page-banner.css");
 @import url("responsive.css");
 
 
@@ -347,6 +349,61 @@
   background: var(--dark);
 }
 
+/* ================= DROPDOWN ================= */
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+/* Dropdown box */
+.dropdown-menu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  min-width: 220px;
+  background: rgb(71, 71, 71);
+  border-radius: 6px;
+  overflow: hidden;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+/* Show dropdown on hover */
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+  display: block;
+  padding: 14px 18px;
+  width: 100%;             /* 👈 full width */
+  box-sizing: border-box;
+  
+  color: var(--white);
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Hover effect → RED background */
+.dropdown-menu a:hover {
+  background: var(--red);
+  /* margin-left: 0px; */
+  color: #fff;
+  padding-left: 28px;   /* 👈 smooth slide */
+}
+
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .feature-grid {
@@ -358,6 +415,8 @@
     max-width: 100%;
   }
 }
+
+/* ABOUT SECTION */
 
 /* ABOUT */
 #about {
@@ -379,6 +438,9 @@
   font-size: 1.3rem;
   color: #666;
   font-weight: 500;
+}
+.about-desc {
+  max-width: 600px;
 }
 
 .about-img {
@@ -493,6 +555,7 @@
   opacity: 1;
   transform: translateX(0);
 }
+
 
 /* SERVICES SECTION */
 .services-section {

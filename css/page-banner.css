@@ -1,3 +1,6 @@
+@import url(base.css);
+@import url(color.css);
+
 .page-banner {
   position: relative;
   height: 320px;
@@ -31,7 +34,7 @@
 }
 
 .breadcrumb {
-  font-size: 15px;
+  font-size: 22px;
   color: #ddd;
   font-weight: 700;
 }
@@ -45,10 +48,48 @@
   margin: 0 6px;
 }
 
+/* ===============================
+   BREADCRUMB RESPONSIVE PATCH
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .breadcrumb {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .breadcrumb span {
+    margin: 0 4px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 14px;
+  }
+
+  .breadcrumb span {
+    margin: 0 3px;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .page-banner {
     height: 240px;
+    width: 100%;
   }
 
   .page-banner-content h1 {

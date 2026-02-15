@@ -204,8 +204,25 @@ function loadHTML(id, file, callback) {
       document.getElementById(id).innerHTML = data;
       if (callback) callback();
     })
-    .catch(err => console.error("Error loading", file, err));
+    .catch(err => console.error("Load error:", err));
 }
+
+// function loadHTML(id, file, callback) {
+//   fetch(file)
+//     .then(response => {
+//       if (!response.ok) {
+//         throw new Error("Failed to load " + file);
+//       }
+//       return response.text();
+//     })
+//     .then(data => {
+//       document.getElementById(id).innerHTML = data;
+//       if (callback) callback();
+//     })
+//     .catch(error => {
+//       console.error(error);
+//     });
+// }
 
 /* ================= HEADER SCROLL ================= */
 let header = null;
@@ -346,7 +363,14 @@ loadHTML("header", "partials/header.html", () => {
   });
 
   loadHTML("footer", "partials/footer.html");
+  loadHTML("about-block", "partials/about-block.html");
+  loadHTML("service-section", "partials/service-section.html", () => {
+    // 🔥 animation runs AFTER HTML loads
+    initScrollAnimation();
+  });
 
   initScrollAnimation();
   initHowWorkLines();
 });
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Metric Conversion</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/kyc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="topbar"></div>
+    <div id="header"></div>
+
+    <!-- PAGE BANNER -->
+    <div id="pageBanner"></div>
+
+    <section class="service-detail">
+        <div class="container">
+
+            <div class="service-grid">
+
+                <!-- LEFT SIDE -->
+                <div class="service-left">
+
+                    <!-- <div class="service-image">
+                        <img src="images/about/service-32.jpg" alt="Know Your Customer">
+                    </div> -->
+                    <div class="feature-sidebar">
+                        <div class="feature-header"></div>
+
+                        <h3 class="feature-title">Features</h3>
+                        <span class="feature-underline"></span>
+
+                        <ul class="feature-menu">
+                            <li>
+                                <a href="kyc.html">
+                                    <span class="arrow">›</span>
+                                    Know Your Customer (KYC)
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="metric-coversion.html">
+                                    <span class="arrow">›</span>
+                                    Metric Conversion
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="currency-calculator.html">
+                                    <span class="arrow">›</span>
+                                    Currency Calculator
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="help-box">
+                        <div class="help-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>Let's help you!</h3>
+                        <p>New Delhi</p>
+                        <p>Call us: <strong>+91 98765 43210</strong></p>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="service-right">
+
+                    <h2>Metric Conversion</h2>
+
+                    <p>Shipping charges will be based on the dimensional weight of the shipment when the dimensional
+                        weight exceeds the actual weight. <br>
+
+                        Dimensional weight is determined by using M 5 Continent Logistics Solution (P) Ltd. volumetric
+                        standard. <br>
+
+                        Step <br>
+                        Step 1:Calculate cubic size : <br>
+
+                        Multiply the length by the width and by the height (each rounded up to the nearest whole
+                        centimetre) of each package
+
+                        Step 2:Determine the dimensional weight : <br>
+
+                        Divide the cubic size of the package by 5000 to determine the dimensional weight in kilograms.
+                        <br>
+
+                        Note: <br>
+
+                        The maximum weight of a package may vary by destination. <br>
+                        Call our Customer Service Representative for details. <br>
+                    </p>
+
+                    <div class="calculator-box">
+
+                        <div class="form-group">
+                            <label>Length :</label>
+                            <input type="number" id="length">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Width :</label>
+                            <input type="number" id="width">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Height :</label>
+                            <input type="number" id="height">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Unit :</label>
+                            <select id="unit">
+                                <option value="cm">CM</option>
+                                <option value="inch">INCH</option>
+                            </select>
+                        </div>
+
+                        <button class="btn" onclick="calculate()">Show</button>
+
+                        <div class="result">
+                            Your Volumetric Weight is :
+                            <span id="output">0</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/metric-conversion.js"></script>
+    <script>
+        loadHTML("pageBanner", "partials/page-banner.html", () => {
+            document.getElementById("pageTitle").innerText = "METRIC CONVERSION";
+            document.getElementById("breadcrumb").innerHTML =
+                `<a href="index.html">Home</a> <span>›</span> <span>Metric Conversion</span>`;
+        });
+
+    </script>
+</body>
+
+</html>
