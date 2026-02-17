@@ -826,7 +826,7 @@
   }
 
   .service-number {
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .service-card h3 {
@@ -839,6 +839,10 @@
 
   .service-image img {
     height: 160px;
+  }
+  .service-icon img {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -856,7 +860,7 @@
 ================================ */
 @media (max-width: 768px) {
   .services-header h2 {
-    font-size: 32px;
+    font-size: 52px;
   }
 
   .services-desc {
@@ -866,6 +870,10 @@
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+  .service-icon img {
+    width: 60px;
+    height: 60px;
   }
 
   .service-card {
@@ -1038,6 +1046,7 @@
     display: none;
   }
 }
+
 /* ########### INDEX CTA ############### */
 @media (max-width: 320px) {
 

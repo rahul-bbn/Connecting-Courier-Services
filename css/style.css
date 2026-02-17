@@ -823,9 +823,9 @@
 /* NUMBER */
 .service-number {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 70px;
+  top: 14px;
+  right: 14px;
+  font-size: 34px;              /* ✅ mobile default */
   font-weight: bold;
   color: rgba(255, 255, 255, 0.15);
 }
@@ -833,6 +833,13 @@
 /* ICON */
 .service-icon img {
   margin-bottom: 20px;
+}
+
+.service-icon img,
+.diagonal-icon img {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 14px;
 }
 
 /* TITLE */
