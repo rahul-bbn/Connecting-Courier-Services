@@ -659,7 +659,7 @@
 .about-img img {
   display: block;
   height: 400px;
-  max-width: 100%;
+  width: 100%;
   object-fit: cover;
   object-position: right;
 }
@@ -687,6 +687,7 @@
   border: 2px solid transparent;
   transition: 0.3s ease;
   text-align: center;
+  min-width: 220px;
 }
 
 
@@ -1434,4 +1435,6 @@
   font-size: 14px;
   color: #cfcfcf;
 }
+
+
 
