@@ -456,8 +456,9 @@
 
 /* GRID */
 .feature-grid {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   gap: 30px;
 }
@@ -470,7 +471,7 @@
 
 .feature-box.center {
   flex: 0.8;
-  padding-right: 100px;
+  padding-right: 0 !important;
 }
 
 /* ICON */

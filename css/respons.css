@@ -521,155 +521,117 @@
 
   .track-input input {
     padding: 12px 90px 12px 12px;
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .track-input button {
     padding: 0 10px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
 }
 
 @media (max-width: 768px) {
 
-  /* overall red bar height kam */
   .feature-section {
-    padding: 6px 6px;
+    padding: 10px;
   }
 
-  /* columns ka gap kam */
+  /* STACK all items */
   .feature-grid {
-    gap: 14px;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
-  /* icon size kam (position same) */
-  .feature-icon {
-    width: 32px;
-    height: 32px;
-  }
-  .feature-box img{
+  /* MAKE feature-box FLEX */
+  .feature-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: left;
   }
 
-  /* heading size thoda kam */
+  /* icon proper center */
+  .feature-icon {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 6px;
+  }
+
+  /* REMOVE this completely ❌ */
+  /* .feature-box img { align-items: center; } */
+
   .feature-box h4 {
-    font-size: 16px;
-    margin-bottom: 3px;
+    font-size: 15px;
   }
 
-  /* text compact */
   .feature-box p,
   .feature-box span {
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
-  /* track input compact */
+  /* Track input */
   .track-input {
-    margin: 6px auto 0;
-    max-width: 340px;
+    max-width: 320px;     /* 🔥 chhota width */
+    margin: 12px auto 0; /* 🔥 center */
+    display: flex;
+    justify-content: center;
   }
 
   .track-input input {
-    padding: 10px 60px 10px 10px;
-    font-size: 8px;
+    width: 100%;
+    font-size: 13px;
+    padding: 8px 70px 8px 12px; /* button ke liye space */
   }
 
   .track-input button {
-    padding: 0 5px;
-    font-size: 9px;
+    font-size: 12px;
+    padding: 0 12px;
   }
-
 }
 
 @media (max-width: 425px) {
 
   .feature-section {
-    padding: 5px;
+    padding: 8px;
   }
-  /* columns ka gap kam */
+
   .feature-grid {
-    gap: 10px;
+    gap: 14px;
   }
 
   .feature-icon {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
 
   .feature-box h4 {
-    font-size: 12px;
-    margin-bottom: 3px;
+    font-size: 14px;
   }
 
   .feature-box p,
   .feature-box span {
-    font-size: 6px;
-    line-height: 1.4;
-  }
-
-  /* track input compact */
-  .track-input {
-    margin: 6px auto 0;
-    max-width: 320px;
-  }
-
-  .track-input input {
-    padding: 10px 90px 10px 10px;
-    font-size: 6px;
-  }
-
-  .track-input button {
-    padding: 0 2px;
-    font-size: 6px;
-  }
-
-}
-
-@media (max-width: 320px) {
-
-  .feature-section {
-    padding: 5px;
-  }
-  /* columns ka gap kam */
-  .feature-grid {
-    gap: 8px;
-  }
-
-  .feature-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .feature-box h4 {
     font-size: 12px;
-    margin-bottom: 3px;
   }
 
-  .feature-box p,
-  .feature-box span {
-    font-size: 6px;
-    
-  }
-
-  /* track input compact */
   .track-input {
-    margin: 6px auto 0;
-    max-width: 320px;
+    max-width: 260px;
+    margin-top: 10px;
   }
 
   .track-input input {
-    padding: 10px 50px 10px 10px;
-    font-size: 3px;
+    font-size: 12px;
+    padding: 7px 60px 7px 10px;
   }
 
   .track-input button {
-    padding: 0 2px;
-    font-size: 3px;
+    font-size: 11px;
+    padding: 0 10px;
   }
-
 }
+
+
 
 /* ########## INDEX ABOUT ######### */
 @media (max-width: 1024px) {
