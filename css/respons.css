@@ -908,7 +908,7 @@
 @media (max-width: 425px) {
 
   .services-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
@@ -928,8 +928,8 @@
 
   .service-icon img,
   .diagonal-icon img {
-    width: 70px;
-    height: 70px;
+    width: 42px;
+    height: 42px;
   }
 
   .service-card h3 {
@@ -948,11 +948,11 @@
     font-size: 14px;
   }
 
-  /* Disable hover effects on mobile
+  Disable hover effects on mobile
   .hover-content,
   .hover-arrow {
     display: none;
-  } */
+  }
 }
 
 
@@ -963,12 +963,13 @@
 @media (max-width: 375px) {
 
   .services-grid {
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 
   .service-card {
     padding: 14px 8px 0;
-    min-height: 315px;
+    min-height: auto;
   }
 
   .service-number {
@@ -986,6 +987,11 @@
   .service-image img {
     height: 110px;
   }
+  Disable hover effects on mobile
+  .hover-content,
+  .hover-arrow {
+    display: none;
+  }
 }
 
 
@@ -996,12 +1002,13 @@
 @media (max-width: 320px) {
 
   .services-grid {
+    grid-template-columns: 1fr;
     gap: 8px;
   }
 
   .service-card {
     padding: 12px 6px 0;
-    min-height: 290px;
+    min-height: auto;
   }
 
   .service-card::before {
@@ -1030,12 +1037,12 @@
   .service-image img {
     height: 95px;
   }
-
+Disable hover effects on mobile
+  .hover-content,
   .hover-arrow {
-    width: 34px;
-    height: 34px;
-    font-size: 16px;
+    display: none;
   }
+  
 }
 
 /* ########### INDEX CTA ############### */
