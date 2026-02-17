@@ -914,7 +914,7 @@
 
   .service-card {
     padding: 18px 14px 0;
-    min-height: auto;             /* 🔥 FIX */
+    min-height: auto;
   }
 
   .service-card::before {
@@ -944,18 +944,12 @@
     height: 120px;
   }
 
-  .hover-content p {
-    font-size: 14px;
-  }
-
-  Disable hover effects on mobile
+  /* Disable hover effects on mobile */
   .hover-content,
   .hover-arrow {
     display: none;
   }
 }
-
-
 
 /* ===============================
    375px – Mobile Medium
@@ -987,13 +981,13 @@
   .service-image img {
     height: 110px;
   }
-  Disable hover effects on mobile
+
+  /* Disable hover effects on mobile */
   .hover-content,
   .hover-arrow {
     display: none;
   }
 }
-
 
 
 /* ===============================
@@ -1037,14 +1031,13 @@
   .service-image img {
     height: 95px;
   }
-Disable hover effects on mobile
+
+  /* Disable hover effects on mobile */
   .hover-content,
   .hover-arrow {
     display: none;
   }
-  
 }
-
 /* ########### INDEX CTA ############### */
 @media (max-width: 320px) {
 
