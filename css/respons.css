@@ -844,7 +844,7 @@
 
 /* ===============================
    768px – Tablet Portrait
-   (3 Cards Per Row)
+   (2 Cards Per Row)
 ================================ */
 @media (max-width: 768px) {
   .services-header h2 {
@@ -856,12 +856,12 @@
   }
 
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .service-card {
-    padding: 22px 18px 0;
+    padding: 20px 16px 0;
   }
 
   .service-number {
@@ -895,18 +895,18 @@
 
 /* ===============================
    425px – Mobile Large
-   (3 Cards Per Row)
+   (1 Cards Per Row)
 ================================ */
 @media (max-width: 425px) {
 
   .services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }
 
   .service-card {
-    padding: 16px 10px 0;
-    min-height: 340px;
+    padding: 18px 14px 0;
+    min-height: auto;             /* 🔥 FIX */
   }
 
   .service-card::before {
@@ -920,8 +920,8 @@
 
   .service-icon img,
   .diagonal-icon img {
-    width: 32px;
-    height: 32px;
+    width: 70px;
+    height: 70px;
   }
 
   .service-card h3 {
@@ -929,7 +929,7 @@
   }
 
   .service-card p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .service-image img {
@@ -940,10 +940,10 @@
     font-size: 14px;
   }
 
+  /* Disable hover effects on mobile */
+  .hover-content,
   .hover-arrow {
-    width: 38px;
-    height: 38px;
-    font-size: 18px;
+    display: none;
   }
 }
 
@@ -1007,8 +1007,8 @@
 
   .service-icon img,
   .diagonal-icon img {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
   }
 
   .service-card h3 {
