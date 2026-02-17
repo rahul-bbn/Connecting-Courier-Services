@@ -818,6 +818,7 @@
 
   .services-grid {
     gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .service-card {
@@ -841,6 +842,13 @@
   }
 }
 
+
+@media (min-width: 1025px) {
+  .services-grid {
+    gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  }
 
 /* ===============================
    768px – Tablet Portrait
@@ -940,11 +948,11 @@
     font-size: 14px;
   }
 
-  /* Disable hover effects on mobile */
+  /* Disable hover effects on mobile
   .hover-content,
   .hover-arrow {
     display: none;
-  }
+  } */
 }
 
 
