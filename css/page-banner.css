@@ -3,10 +3,12 @@
 
 .page-banner {
   position: relative;
-  height: 320px;
+  min-height: 320px;
   background: url("../images/page-banner-bg-5.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .page-banner-overlay {
@@ -21,6 +23,7 @@
   width: 95%;
   margin: auto;
   color: #fff;
+  text-align: left;
 }
 
 .page-banner-content h1 {
@@ -37,6 +40,8 @@
   font-size: 22px;
   color: #ddd;
   font-weight: 700;
+  margin-top: 6px;
+  text-align: left;
 }
 
 .breadcrumb a {
@@ -48,51 +53,17 @@
   margin: 0 6px;
 }
 
-/* ===============================
-   BREADCRUMB RESPONSIVE PATCH
-================================ */
-
-/* Tablet */
-@media (max-width: 992px) {
-  .breadcrumb {
-    font-size: 18px;
-    text-align: center;
-  }
+.page-banner-content {
+  animation: fadeUp 0.6s ease forwards;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .breadcrumb {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.4;
-    text-align: center;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
   }
-
-  .breadcrumb span {
-    margin: 0 4px;
-  }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-  .breadcrumb {
-    font-size: 14px;
-  }
-
-  .breadcrumb span {
-    margin: 0 3px;
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .page-banner {
-    height: 240px;
-    width: 100%;
-  }
-
-  .page-banner-content h1 {
-    font-size: 34px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -1671,3 +1671,74 @@
     padding: 10px 8px;
   }
 }
+
+/* ############### BREAD CRUMB ############# */
+@media (max-width: 992px) {
+
+  .page-banner {
+    min-height: 280px;
+    background-size: 110%;   /* 🔽 image thodi compact */
+  }
+
+  .page-banner-content h1 {
+    font-size: 40px;
+  }
+
+  .breadcrumb {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .page-banner {
+    min-height: 240px;
+    background-size: 120%;   /* 🔽 image aur zoom-out */
+  }
+
+  .page-banner-content h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .breadcrumb {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .breadcrumb span {
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .page-banner {
+    min-height: 210px;
+    background-size: 185%;   /* 🔥 image small screen ke liye fit */
+  }
+
+  .page-banner-content h1 {
+    font-size: 26px;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .page-banner {
+    min-height: 190px;
+    background-size: 200%;
+  }
+  .page-banner-content h1 {
+    font-size: 22px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+  }
+}
