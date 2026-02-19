@@ -1,10 +1,11 @@
-@import url(page-banner.css);
 @import url(base.css);
+@import url(page-banner.css);
 @import url(color.css);
 
 /* ABOUT MAIN SECTION */
 .about-main {
-  /* padding: 80px 0; */
+  width: 100%;
+  max-width: 100%;
   background: #fff;
 }
 
@@ -16,40 +17,40 @@
   align-items: center;
 }
 
-/* RIGHT LONG TEXT FIX */
-.about-right {
-  max-width: 600px;   /* 👈 limits text width */
-}
-
-.about-right p {
-  text-align: left;
-  line-height: 1.8;
-  font-size: 18px;
-  color: #555;
-
-  max-width: 100%;   /* 👈 no overflow */
-  word-break: normal;
-}
 
 /* LEFT IMAGE */
 .about-left {
   flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .about-left img {
   width: 100%;
-  max-height: 520px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover; 
+  /* object-fit: contain; */
+  border-radius: 10px;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
 /* RIGHT CONTENT */
 .about-right {
   flex: 1.2;
-  max-width: 620px;   /* 👈 MOST IMPORTANT */
+  max-width: 620px;
+  /* 👈 MOST IMPORTANT */
 }
 
-.about-right .about-text p {
-font-size: 18px;
+.about-right p,
+.about-intro,
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+   max-width: 100%;
+  /* 👈 no overflow */
+  word-break: normal;
 }
 
 .about-right h2 {
@@ -63,17 +64,10 @@ font-size: 18px;
   color: #e11d48;
 }
 
-.about-intro {
-  margin: 20px 0 30px;
-  font-size: 16px;
-  color: #555;
-  line-height: 1.7;
-}
-
 .about-right hr {
   border: none;
   border-bottom: 1px solid #e5e5e5;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 
 /* VISION / MISSION ROW */
@@ -81,21 +75,18 @@ font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .about-text h4 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   color: #222;
 }
 
-.about-text p {
-  font-size: 15px;
-  color: #555;
-  line-height: 1.6;
-  max-width: 420px;
-}
+
 
 .about-thumb img {
   width: 120px;
@@ -104,29 +95,12 @@ font-size: 18px;
   border-radius: 4px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 992px) {
-  .about-container {
-    flex-direction: column;
-  }
-
-  .about-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .about-thumb img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 /* ================= ANIMATIONS ================= */
 
 /* COMMON */
 .animate-on-scroll {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(0px);
   transition: all 0.8s ease;
 }
 
@@ -159,12 +133,24 @@ font-size: 18px;
   transform: translateX(0);
 }
 
+.about-left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.05));
+  border-radius: 10px;
+}
 
+.about-left:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* ############ TRASPORT ############### */
 /* HOVER IAMGE */
 .about-transport {
   padding: 80px 60px;
   background: #fff;
-  /* font-family: "Poppins", sans-serif; */
 }
 
 .about-grid {
@@ -287,7 +273,7 @@ font-size: 18px;
   margin-bottom: 25px;
 }
 
-/* LIST */
+/* ############### FEATURE LIST ##############*/
 .features {
   list-style: none;
   padding: 0;
@@ -307,26 +293,16 @@ font-size: 18px;
   left: 0;
   color: #e92147;
   font-weight: bold;
-}
-
-@media (max-width: 992px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .img-box img {
-    height: 380px;
-  }
 }
 
 /* INITIAL STATE */
-.animate-content > * {
+.animate-content>* {
   opacity: 0;
   transform: translateX(40px);
 }
 
 /* ACTIVE STATE */
-.animate-content.active > * {
+.animate-content.active>* {
   opacity: 1;
   transform: translateX(0);
   transition: all 0.7s ease;
@@ -357,11 +333,25 @@ font-size: 18px;
   transition: all 0.5s ease;
 }
 
-.animate-content.active .features li:nth-child(1) { transition-delay: 0.6s; }
-.animate-content.active .features li:nth-child(2) { transition-delay: 0.75s; }
-.animate-content.active .features li:nth-child(3) { transition-delay: 0.9s; }
-.animate-content.active .features li:nth-child(4) { transition-delay: 1.05s; }
-.animate-content.active .features li:nth-child(5) { transition-delay: 1.2s; }
+.animate-content.active .features li:nth-child(1) {
+  transition-delay: 0.6s;
+}
+
+.animate-content.active .features li:nth-child(2) {
+  transition-delay: 0.75s;
+}
+
+.animate-content.active .features li:nth-child(3) {
+  transition-delay: 0.9s;
+}
+
+.animate-content.active .features li:nth-child(4) {
+  transition-delay: 1.05s;
+}
+
+.animate-content.active .features li:nth-child(5) {
+  transition-delay: 1.2s;
+}
 
 /* SECTION */
 .about-air {
@@ -412,12 +402,12 @@ font-size: 18px;
 }
 
 /* ===== ANIMATION ===== */
-.animate-air > * {
+.animate-air>* {
   opacity: 0;
   transform: translateX(50px);
 }
 
-.animate-air.active > * {
+.animate-air.active>* {
   opacity: 1;
   transform: translateX(0);
   transition: all 0.8s ease;
@@ -434,18 +424,6 @@ font-size: 18px;
 
 .animate-air.active p {
   transition-delay: 0.7s;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .about-air-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .about-air-content h2 {
-    font-size: 32px;
-  }
 }
 
 /* ================= AIRPLANE IMAGE ================= */
@@ -487,9 +465,11 @@ font-size: 18px;
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-12px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -500,132 +480,8 @@ font-size: 18px;
    (NO EXISTING CODE MODIFIED)
 ================================== */
 
-/* ---------- TABLET (≤ 992px) ---------- */
-@media (max-width: 992px) {
-
-  /* MAIN ABOUT */
-  .about-container {
-    flex-direction: column;
-    gap: 40px;
-    padding: 0 20px;
-  }
-
-  .about-left img {
-    max-height: 420px;
-  }
-
-  .about-right {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .about-right h2 {
-    font-size: 34px;
-  }
-
-  .about-right p,
-  .about-text p {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  /* VISION / MISSION */
-  .about-row {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-text p {
-    max-width: 100%;
-  }
-
-  /* TRANSPORT GRID */
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .img-box img {
-    height: 400px;
-  }
-
-  /* AIR SECTION */
-  .about-air-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .about-air-image img {
-    margin: auto;
-  }
-
-  .about-air-content h2 {
-    font-size: 36px;
-  }
-}
-
-/* ---------- MOBILE (≤ 768px) ---------- */
-@media (max-width: 768px) {
-
-  /* MAIN ABOUT */
-  .about-main {
-    padding: 50px 0;
-  }
-
-  .about-left img {
-    max-height: 300px;
-  }
-
-  .about-right h2 {
-    font-size: 28px;
-    line-height: 1.3;
-  }
-
-  .about-right p,
-  .about-intro {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-
-  /* TRANSPORT SECTION */
-  .about-transport {
-    padding: 50px 20px;
-  }
-
-  .img-box img {
-    height: 300px;
-  }
-
-  .about-content h2 {
-    font-size: 28px;
-  }
-
-  .about-content p {
-    font-size: 14px;
-  }
-
-  /* LIST */
-  .features li {
-    font-size: 14px;
-  }
-
-  /* AIR SECTION */
-  .about-air {
-    padding: 60px 20px;
-  }
-
-  .about-air-content h2 {
-    font-size: 28px;
-  }
-
-  .about-air-content p {
-    font-size: 14px;
-  }
-}
-
 /* ---------- SMALL MOBILE (≤ 480px) ---------- */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 
   .about-left img,
   .img-box img {
@@ -645,9 +501,9 @@ font-size: 18px;
   }
 
   /* Reduce animation distance for small screens */
-  .animate-left,
+/* .animate-left,
   .animate-right,
   .animate-plane {
     transform: translateX(0);
   }
-}
+}  */

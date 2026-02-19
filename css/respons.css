@@ -1716,7 +1716,7 @@
 
   .page-banner {
     min-height: 210px;
-    background-size: 185%;   /* 🔥 image small screen ke liye fit */
+    background-size: 185%;   /* image small screen ke liye fit */
   }
 
   .page-banner-content h1 {
@@ -1740,5 +1740,227 @@
 
   .breadcrumb {
     font-size: 13px;
+  }
+}
+
+/* ############### ABOUT US ################### */
+/* about main */
+/* @media (max-width: 768px) {
+
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .about-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-right h2 {
+    font-size: 26px;
+  }
+
+  .about-right p,
+  .about-intro,
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+    height: auto;
+  }
+} */
+
+@media (max-width: 320px) {
+
+  .about-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 12px;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .about-right h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-right p,
+  .about-intro,
+  .about-text p {
+    font-size: 13px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    height: 300px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+@media (min-width: 321px) and (max-width: 375px) {
+
+  .about-container {
+    flex-direction: column;
+    gap: 22px;
+    padding: 0 15px;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .about-right h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-right p,
+  .about-intro,
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    height: 280px;
+  }
+
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 18px;
+  }
+
+  .about-right h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-right {
+    text-align: center;
+  }
+
+  .about-right p,
+  .about-intro,
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    height: 280px;
+  }
+
+}
+
+
+
+
+/* ########## TRANSPORT ########### */
+@media (max-width: 992px) {
+
+  /* TRANSPORT GRID */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  
+  /* TRANSPORT SECTION */
+  .about-transport {
+    padding: 50px 20px;
+  }
+
+  .img-box img {
+    height: auto;
+    height: 300px;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  /* LIST */
+  .features li {
+    font-size: 14px;
+  }
+}
+
+/* ############### AIR ######### */
+/* ---------- TABLET (≤ 992px) ---------- */
+@media (max-width: 992px) {
+
+  /* AIR SECTION */
+  .about-air-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-air-image img {
+    margin: auto;
+  }
+
+  .about-air-content h2 {
+    font-size: 36px;
+  }
+}
+
+/* ---------- MOBILE (≤ 768px) ---------- */
+@media (max-width: 768px) {
+
+  /* AIR SECTION */
+  .about-air {
+    padding: 60px 20px;
+  }
+
+  .about-air-content h2 {
+    font-size: 28px;
+  }
+
+  .about-air-content p {
+    font-size: 14px;
   }
 }
