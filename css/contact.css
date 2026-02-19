@@ -116,6 +116,12 @@
   font-size: 15px;
   border-radius: 4px;
 }
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+  font-size: 13px;
+  color: #777;
+}
+
 
 .input-box textarea {
   height: 130px;
@@ -141,9 +147,4 @@
   background: #be123c;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
-}
+
