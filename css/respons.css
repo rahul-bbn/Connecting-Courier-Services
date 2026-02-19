@@ -1885,6 +1885,59 @@
 
 }
 
+@media (max-width: 768px) {
+
+  .about-container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .about-left img {
+    height: 260px;
+  }
+
+  .about-right {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .about-right h2 {
+    font-size: 24px;
+  }
+
+  .about-right p,
+  .about-intro,
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    height: 300px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .about-container {
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .about-right h2 {
+    font-size: 30px;
+  }
+
+}
 
 
 
