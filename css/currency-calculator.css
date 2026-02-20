@@ -4,7 +4,9 @@
 
 /* MAIN CARD */
 .converter{
-  width:360px;
+  width:100%;
+  max-width:360px;
+  margin:auto;
   background:#ffffff;
   border-radius:14px;
   padding:22px;

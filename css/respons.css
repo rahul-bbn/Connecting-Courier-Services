@@ -2072,3 +2072,444 @@
 
 }
 
+/* ################# KYC RESPONSE ############## */
+/* =====================================
+   RESPONSIVE FIX – SERVICE PAGE
+===================================== */
+
+/* ---------- 1024px (Small Laptop) ---------- */
+@media (max-width: 1024px) {
+
+  .service-grid {
+    gap: 40px;
+  }
+
+  .feature-menu li a {
+    font-size: 20px;
+  }
+
+}
+
+
+/* ---------- 768px (Tablet) ---------- */
+@media (max-width: 768px) {
+
+  .service-grid {
+    grid-template-columns: 1fr;   /* Stack layout */
+    gap: 40px;
+  }
+
+  .service-right h2 {
+    font-size: 28px;
+  }
+
+  .service-right p {
+    font-size: 15px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .feature-sidebar {
+    padding: 25px;
+  }
+
+  .feature-title {
+    font-size: 26px;
+  }
+
+  .feature-menu li a {
+    font-size: 18px;
+  }
+
+}
+
+
+/* ---------- 425px (Large Mobile) ---------- */
+@media (max-width: 425px) {
+
+  .container {
+    max-width: 92%;
+  }
+
+  .feature-sidebar {
+    padding: 20px;
+  }
+
+  .feature-title {
+    font-size: 22px;
+  }
+
+  .feature-menu li a {
+    font-size: 16px;
+    padding: 14px 0;
+  }
+
+  .feature-menu .arrow {
+    font-size: 28px;
+  }
+
+  .service-right h2 {
+    font-size: 24px;
+  }
+
+  .service-right p {
+    font-size: 14px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;   /* Features single column */
+  }
+
+  .help-box {
+    padding: 25px;
+  }
+
+}
+
+
+/* ---------- 375px (Medium Mobile) ---------- */
+@media (max-width: 375px) {
+
+  .feature-title {
+    font-size: 20px;
+  }
+
+  .feature-menu li a {
+    font-size: 15px;
+  }
+
+  .service-right h2 {
+    font-size: 22px;
+  }
+
+  .service-right p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+}
+
+
+/* ---------- 320px (Small Mobile) ---------- */
+@media (max-width: 320px) {
+
+  .feature-sidebar {
+    padding: 15px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .feature-menu li a {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .feature-menu .arrow {
+    font-size: 22px;
+  }
+
+  .service-right h2 {
+    font-size: 20px;
+  }
+
+  .service-right p {
+    font-size: 12px;
+  }
+
+  .help-box {
+    padding: 20px;
+  }
+
+}
+
+
+
+
+/* ############### CURRENCY CALCULATOR ################ */
+/* =====================================
+   CURRENCY CONVERTER RESPONSIVE PATCH
+===================================== */
+
+/* 1024px */
+@media (max-width: 1024px) {
+
+  .service-grid {
+    gap: 40px;
+  }
+
+  .service-right h2 {
+    font-size: 30px;
+  }
+
+}
+
+
+/* 768px (Tablet) */
+@media (max-width: 768px) {
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-right h2 {
+    font-size: 26px;
+  }
+
+  .service-right p {
+    font-size: 15px;
+  }
+
+  .converter {
+    width: 100%;
+    max-width: 450px;
+  }
+
+}
+
+
+/* 425px (Large Mobile) */
+@media (max-width: 425px) {
+
+  .service-right h2 {
+    font-size: 22px;
+  }
+
+  .service-right p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .converter {
+    padding: 18px;
+  }
+
+  .header {
+    font-size: 18px;
+  }
+
+  .result {
+    font-size: 16px;
+  }
+
+  .form select,
+  .form input {
+    font-size: 13px;
+    padding: 9px 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+}
+
+
+/* 375px */
+@media (max-width: 375px) {
+
+  .service-right h2 {
+    font-size: 20px;
+  }
+
+  .service-right p {
+    font-size: 13px;
+  }
+
+  .header {
+    font-size: 17px;
+  }
+
+  .result {
+    font-size: 15px;
+  }
+
+}
+
+
+/* 320px (Small Devices) */
+@media (max-width: 320px) {
+
+  .service-right h2 {
+    font-size: 18px;
+  }
+
+  .service-right p {
+    font-size: 12px;
+  }
+
+  .converter {
+    padding: 15px;
+  }
+
+  .header {
+    font-size: 16px;
+  }
+
+  .result {
+    font-size: 14px;
+  }
+
+  .form select,
+  .form input {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+}
+
+/* ############### E COMMERCE DELIVERY SOLUTION ############### */
+/* ################# METRIC COVERSION ################ */
+/* =====================================
+   METRIC CONVERSION RESPONSIVE PATCH
+===================================== */
+
+
+/* =====================================
+   E COMMERCE RESPONSIVE PATCH
+===================================== */
+
+
+/* 1024px */
+@media (max-width: 1024px) {
+
+  .service-grid {
+    gap: 40px;
+  }
+
+  .service-right h2 {
+    font-size: 30px;
+  }
+
+}
+
+
+/* 768px (Tablet) */
+@media (max-width: 768px) {
+
+  .service-detail {
+    padding: 60px 0;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .service-right h2 {
+    font-size: 26px;
+  }
+
+  .service-right p {
+    font-size: 15px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .help-box {
+    padding: 30px;
+  }
+
+}
+
+
+/* 425px (Large Mobile) */
+@media (max-width: 425px) {
+
+  .service-detail {
+    padding: 40px 0;
+  }
+
+  .service-right h2 {
+    font-size: 22px;
+  }
+
+  
+
+  .service-right p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .help-box {
+    padding: 25px;
+  }
+
+  .help-box h3 {
+    font-size: 22px;
+  }
+
+}
+
+
+/* 375px */
+@media (max-width: 375px) {
+
+  .service-right h2 {
+    font-size: 20px;
+  }
+
+  .service-right p {
+    font-size: 13px;
+  }
+  @media (max-width: 375px) {
+  .page-banner-content h1 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    padding-top: 18%;
+    padding-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+
+}
+
+
+/* 320px */
+@media (max-width: 320px) {
+
+  .service-right h2 {
+    font-size: 18px;
+  }
+
+  .service-right p {
+    font-size: 12px;
+  }
+
+  .help-box {
+    padding: 20px;
+  }
+
+  .help-box h3 {
+    font-size: 18px;
+  }
+
+  @media (max-width: 320px) {
+  .page-banner-content h1 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding-top: 20%;
+    padding-bottom: 10px;
+    line-height: 1.3;
+  }
+}
+}
+
+/* ################# OVERSEAS WAREHOUSING ################## */

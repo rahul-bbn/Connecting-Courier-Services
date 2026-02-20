@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  loadHTML("about-block", "partials/about-block.html", () => {
+  loadHTML("about-block", "about-block.html", () => {
     initScrollAnimation(); // 🔥 re-init AFTER load
   });
 });

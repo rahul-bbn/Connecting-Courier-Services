@@ -224,7 +224,7 @@ function handleHeaderScroll() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadHTML("header", "partials/header.html", () => {
+  loadHTML("header", "header.html", () => {
     header = document.getElementById("mainHeader");
     if (header) {
       header.classList.add("loaded");
@@ -328,7 +328,7 @@ function initHowWorkLines() {
 /* ================= LOAD PARTIALS ================= */
 document.addEventListener("DOMContentLoaded", () => {
 
-  loadHTML("topbar", "partials/topbar.html");
+  loadHTML("topbar", "topbar.html");
 
   function loadHTML(id, file, callback) {
   fetch(file)
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 }
 
-loadHTML("header", "partials/header.html", () => {
+loadHTML("header", "header.html", () => {
   header = document.getElementById("mainHeader");
   if (header) {
     header.classList.add("loaded");
@@ -348,14 +348,14 @@ loadHTML("header", "partials/header.html", () => {
 });
 
 
-  loadHTML("hero", "partials/hero.html", () => {
+  loadHTML("hero", "hero.html", () => {
     animateHeroText();
     initHeroSlider();
   });
 
-  loadHTML("footer", "partials/footer.html");
-  loadHTML("about-block", "partials/about-block.html");
-  loadHTML("service-section", "partials/service-section.html", () => {
+  loadHTML("footer", "footer.html");
+  loadHTML("about-block", "about-block.html");
+  loadHTML("service-section", "service-section.html", () => {
     // 🔥 animation runs AFTER HTML loads
     initScrollAnimation();
   });

@@ -37,6 +37,7 @@
   border: 1px solid #d1d5db;
   border-radius: 4px;
   outline: none;
+  font-style: italic;
 }
 
 .tracking-form textarea:focus {
