@@ -513,21 +513,7 @@
     line-height: 1.45;
   }
 
-  Track input width adjust
-  .track-input {
-    max-width: 360px;
-    margin-top: 8px;
-  }
-
-  .track-input input {
-    padding: 12px 90px 12px 12px;
-    font-size: 10px;
-  }
-
-  .track-input a {
-    padding: 0 10px;
-    font-size: 10px;
-  }
+ 
 
 }
 
@@ -571,24 +557,7 @@
     line-height: 1.4;
   }
 
-  /* Track input */
-  .track-input {
-    max-width: 320px;     /* 🔥 chhota width */
-    margin: 12px auto 0; /* 🔥 center */
-    display: flex;
-    justify-content: center;
-  }
-
-  .track-input input {
-    width: 100%;
-    font-size: 13px;
-    padding: 8px 70px 8px 12px; /* button ke liye space */
-  }
-
-  .track-input a {
-    font-size: 12px;
-    padding: 0 12px;
-  }
+  
 }
 
 @media (max-width: 425px) {
@@ -615,20 +584,7 @@
     font-size: 12px;
   }
 
-  .track-input {
-    max-width: 260px;
-    margin-top: 10px;
-  }
-
-  .track-input input {
-    font-size: 12px;
-    padding: 7px 60px 7px 10px;
-  }
-
-  .track-input a {
-    font-size: 11px;
-    padding: 0 10px;
-  }
+ 
 }
 
 
