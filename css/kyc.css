@@ -15,7 +15,8 @@
 /* TOP RED LINE */
 .feature-header{
   height:4px;
-  background:#e11d48;
+  /* background:#e11d48; */
+  background: var(--red);
   margin:-30px -30px 25px;
 }
 
@@ -32,7 +33,8 @@
   display:block;
   width:60%;
   height:3px;
-  background:#e11d48;
+  /* background:#e11d48; */
+  background: var(--red);
   margin-bottom:30px;
 }
 
@@ -65,7 +67,7 @@
 /* ARROW */
 .feature-menu .arrow{
   font-size:50px;
-  color:#e11d48;
+  color:var(--red);
   font-weight:bold;
   padding-bottom: 10px;
 }
@@ -78,7 +80,7 @@
   bottom:-1px;
   width:100%;
   height:2px;
-  background:#e11d48;
+  background:var(--red);
   transform:scaleX(0);
   transform-origin:left;
   transition:transform 0.35s ease-in-out;
@@ -86,7 +88,7 @@
 
 /* HOVER EFFECT */
 .feature-menu li a:hover{
-  color:#e11d48;
+  color:var(--red);
 }
 
 .feature-menu li a:hover::after{

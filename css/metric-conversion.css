@@ -28,11 +28,11 @@
   }
 
   input:focus, select:focus{
-    border-color:#e11d48;
+    border-color:var(--red);
   }
 
   .btn{
-    background:#e11d48;
+    background:var(--red);
     color:#fff;
     border:none;
     padding:12px 30px;
@@ -43,7 +43,7 @@
   }
 
   .btn:hover{
-    background:#be123c;
+    background:#220141;
   }
 
   .result{

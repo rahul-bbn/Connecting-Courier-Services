@@ -6,7 +6,7 @@
 .about-main {
   width: 100%;
   max-width: 100%;
-  background: #fff;
+  background: var(--white);
 }
 
 .about-container {
@@ -61,7 +61,7 @@
 }
 
 .about-right h2 span {
-  color: #e11d48;
+  color: var(--red);
 }
 
 .about-right hr {
@@ -150,7 +150,7 @@
 /* HOVER IAMGE */
 .about-transport {
   padding: 80px 60px;
-  background: #fff;
+  background: var(--white);
 }
 
 .about-grid {
@@ -179,7 +179,7 @@
 
 /* CONTENT */
 .about-content .small-title {
-  color: #e92147;
+  color: var(--red);
   font-size: 14px;
   margin-bottom: 10px;
   display: inline-block;
@@ -192,7 +192,7 @@
 }
 
 .about-content h2 span {
-  color: #e92147;
+  color: var(--red);
 }
 
 .about-content p {
@@ -220,7 +220,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #e92147;
+  color: var(--red);
   font-weight: bold;
 }
 
@@ -250,7 +250,7 @@
 
 /* CONTENT */
 .about-content .small-title {
-  color: #e92147;
+  color: var(--red);
   font-size: 14px;
   margin-bottom: 10px;
   display: inline-block;
@@ -263,7 +263,7 @@
 }
 
 .about-content h2 span {
-  color: #e92147;
+  color: var(--red);
 }
 
 .about-content p {
@@ -291,7 +291,7 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #e92147;
+  color: var(--red);
   font-weight: bold;
 }
 
@@ -377,7 +377,7 @@
 
 /* CONTENT */
 .about-air-content .small-title {
-  color: #e92147;
+  color: var(--red);
   font-size: 14px;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -392,7 +392,7 @@
 }
 
 .about-air-content h2 span {
-  color: #e92147;
+  color: var(--red);
 }
 
 .about-air-content p {

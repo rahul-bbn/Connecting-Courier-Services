@@ -44,7 +44,7 @@
   bottom: -8px;
   width: 100%;     /* 👈 line ki length */
   height: 2px;     /* 👈 thickness */
-  background: #e11d48;
+  background: var(--red);
 }
 
 .contact-info {
@@ -72,7 +72,7 @@
 }
 
 .icon.phone { background: #2563eb; }
-.icon.email { background: #e11d48; }
+.icon.email { background: var(--red); }
 .icon.location { background: #ef4444; }
 
 /* RIGHT */
@@ -133,7 +133,7 @@
 }
 
 .contact-btn {
-  background: #e11d48;
+  background: var(--red);
   color: #fff;
   padding: 14px 35px;
   border: none;
@@ -144,7 +144,7 @@
 }
 
 .contact-btn:hover {
-  background: #be123c;
+  background: #240144;
 }
 
 

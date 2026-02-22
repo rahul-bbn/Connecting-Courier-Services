@@ -19,7 +19,7 @@
   text-align:center;
   font-size:18px;
   font-weight:600;
-  color:#e11d48;
+  color:var(--red);
   background:#fff1f2;
   border:1px solid #fecdd3;
   padding:10px;
@@ -42,7 +42,7 @@
 
 .form select:focus,
 .form input:focus{
-  border-color:#e11d48;
+  border-color:var(--red);
   box-shadow:0 0 0 3px rgba(225,29,72,0.15);
 }
 
@@ -51,7 +51,7 @@ button{
   width:100%;
   padding:12px;
   border-radius:10px;
-  background:linear-gradient(135deg,#e11d48,#be123c);
+  background:linear-gradient(135deg,var(--red),#240144);
   color:#fff;
   border:none;
   font-size:15px;
