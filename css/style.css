@@ -470,7 +470,7 @@
 .feature-grid {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   gap: 30px;
 }
@@ -1447,3 +1447,114 @@
 
 
 
+/* ################ TRACK AND TRACE ########### */
+.track-section {
+  background: linear-gradient(135deg, #f7f7f7, #ffffff);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CENTER WRAPPER */
+.track-wrapper {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+/* TRACK BOX */
+.track-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.track-box:hover {
+  box-shadow: 0 15px 35px rgba(157, 0, 255, 0.15);
+}
+
+/* INPUT */
+.track-box input {
+  flex: 1;
+  padding: 18px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* INPUT FOCUS */
+.track-box input:focus {
+  background: #faf5ff;
+}
+
+/* BUTTON */
+.track-box button {
+  padding: 10px 10px;
+  height: 100%;
+  border: none;
+  border-radius: 4px;
+  background: #9D00FF;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.track-box button:hover {
+  background: #7a00cc;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+
+/* Tablet */
+@media (max-width: 768px) {
+
+  .track-wrapper h2 {
+    font-size: 26px;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+
+  .track-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .track-wrapper p {
+    font-size: 14px;
+  }
+
+  .track-box input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .track-box button {
+    /* padding: 0 18px */
+    font-size: 14px;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 320px) {
+
+  .track-wrapper h2 {
+    font-size: 18px;
+  }
+
+  .track-box button {
+    padding: 0 5px;
+  }
+
+}

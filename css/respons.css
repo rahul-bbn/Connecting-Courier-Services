@@ -513,7 +513,7 @@
     line-height: 1.45;
   }
 
-  /* Track input width adjust */
+  Track input width adjust
   .track-input {
     max-width: 360px;
     margin-top: 8px;
@@ -2103,8 +2103,10 @@
 @media (max-width: 1024px) {
 
   .service-grid {
+    grid-template-columns: 280px 1fr;
     gap: 40px;
   }
+  
 
   .feature-menu li a {
     font-size: 20px;
@@ -2117,8 +2119,9 @@
 @media (max-width: 768px) {
 
   .service-grid {
-    grid-template-columns: 1fr;   /* Stack layout */
-    gap: 40px;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    /* gap: 10px; */
   }
 
   .service-right h2 {
@@ -2136,6 +2139,7 @@
 
   .feature-sidebar {
     padding: 25px;
+    
   }
 
   .feature-title {
@@ -2144,6 +2148,10 @@
 
   .feature-menu li a {
     font-size: 18px;
+  }
+  .service-left,
+  .service-right {
+    width: 100%;
   }
 
 }

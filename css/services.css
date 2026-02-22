@@ -9,14 +9,15 @@
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
+  padding: 0 15px;
 }
 
 .service-grid {
   display: grid;
-  grid-template-columns: 1fr 1.6fr;
+  grid-template-columns: 320px 1fr;
   gap: 60px;
 }
 
@@ -62,12 +63,15 @@
 /* FEATURES */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-top: 40px;
 }
 
 .service-right {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   animation: fadeUp 0.8s ease forwards;
 }
 
@@ -142,3 +146,4 @@
   }
 }
  */
+
