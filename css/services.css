@@ -60,7 +60,7 @@
   margin-bottom: 15px;
 }
 
-/* FEATURES */
+/* FEATURES
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -73,9 +73,9 @@
   max-width: 100%;
   overflow: hidden;
   animation: fadeUp 0.8s ease forwards;
-}
+} */
 
-@keyframes fadeUp {
+/* @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(40px);
@@ -95,7 +95,7 @@
   .feature-grid {
     grid-template-columns: 1fr 1fr;
   }
-}
+} */
 
 /* ===============================
    SAFE MOBILE RESPONSIVE PATCH

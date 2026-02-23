@@ -473,6 +473,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   gap: 30px;
+  padding: 10px;
 }
 
 /* BOX */

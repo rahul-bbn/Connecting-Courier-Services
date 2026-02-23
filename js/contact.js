@@ -13,7 +13,7 @@ function sendWhatsApp(e) {
   }
 
   // ✅ ADMIN WHATSAPP NUMBER (WITH COUNTRY CODE, NO +)
-  const adminNumber = "919876543210"; // CHANGE THIS
+  const adminNumber = "919266424707"; // CHANGE THIS
 
   const whatsappMessage =
 `📩 *New Contact Enquiry*
